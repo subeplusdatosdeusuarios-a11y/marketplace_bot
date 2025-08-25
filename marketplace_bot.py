@@ -30,6 +30,12 @@ def buscar_marketplace():
                     enviadas.add(url_completa)
                     enviar_telegram(f"📢 Nueva publicación encontrada ({palabra}): {url_completa}")
 
+def mensaje_prueba():
+    enviar_telegram("✅ ¡Bot funcionando correctamente! Este es un mensaje de prueba.")
+
+# Llamada de prueba inmediata
+mensaje_prueba()
+
 # Loop cada 5 minutos
 while True:
     buscar_marketplace()
